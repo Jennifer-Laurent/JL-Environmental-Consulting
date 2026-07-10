@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- CONFIGURATION -->
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/logo2.png">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <!-- Java Script -->
+    <script src="./js/script.js" defer></script>
+    <!-- Title -->
+    <title>Contact</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav">
+    <div class="logo-container">
+        <img src="./images/logo1.png" alt="Logo" class="logo">
+        <span><b>JL Environmental Consulting</b></span>
+    </div>
+    <nav>
+        <a href="index.html"><b>Accueil</b></a>
+        <a href="projects.html"><b>Projets</b></a>
+        <a href="about.html"><b>À propos</b></a>
+        <a href="contact.html"><b>Contact</b></a>
+    </nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero2 hero2-contact">
+    <h1 style="font-size: 40px;">
+        Échangeons autour de vos projets <br> et de vos besoins en analyse et visualisation de données
+    </h1>
+    <div class="hero2-credit">
+        Photo: Jennifer Laurent
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-head">
+        <div class="reveal">
+            <span class="eyebrow">CONTACT</span>
+            <h2>Travaillons ensemble pour valoriser vos données et vos projets</h2>
+        </div>
+        <p class="lead reveal reveal" style="font-size: 18px;">
+            Vous souhaitez discuter d'un projet, obtenir un devis ou simplement échanger ? <br>
+            N'hésitez pas à me contacter via ce formulaire.
+        </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-side reveal">
+        <h2 style="font-size: 28px;">Demande de prestation et de devis</h2> <br>
+        <p style="font-size: 20px; text-align: justify;"> 
+            Vos réponses nous permettent de préparer le premier échange
+            et de mobiliser les bonnes expertises dès la réunion de découverte. 
+        </p> <br>
+
+        <div class="form-info"> <br>
+          <h4>Email professionnel</h4>
+          <p>laurent.jennifer44@gmail.com</p>
+          <h4>Zones d'intervention</h4>
+          <p>France · Europe · International</p>
+        </div>
+      </div>
+
+      <form id="contactForm" class="form reveal reveal" action="https://formspree.io/f/xnjkldeg" method="POST" >
+        <input type="hidden" name="_subject" value="Nouvelle demande JL Environmental Consulting">
+        <div class="stepper">
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="step-panel active">
+          <div class="step-label">Étape 1 · Informations</div>
+          <div class="step-title">Qui êtes-vous ?</div>
+          <div class="field-row">
+            <div class="field"><label>Prénom</label><input type="text" name="prenom" required></div>
+            <div class="field"><label>Nom</label><input type="text" name="nom" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Organisation</label><input type="text" name="organisation"></div>
+            <div class="field"><label>Fonction</label><input type="text" name="fonction"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Email</label><input type="email" name="email" required></div>
+            <div class="field"><label>Téléphone</label><input type="tel" name="telephone"></div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step-panel">
+          <div class="step-label">Étape 2 · Projet</div>
+          <div class="step-title">Quel type d'accompagnement ?</div>
+          <div class="field">
+            <label>Type d'accompagnement</label>
+            <select name="type">
+              <option value="">Sélectionnez —</option>
+              <option>Analyse de données environnementales</option>
+              <option>Visualisation de données complexes</option>
+              <option>Développement d'outils numériques</option>
+              <option>Cartographie & analyse spatiale</option>
+              <option>Interface science & gestion </option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Date de début</label><input type="date" name="debut"></div>
+            <div class="field">
+              <label>Durée estimée</label>
+              <select name="duree">
+                <option>Moins de 3 mois</option>
+                <option>3 à 6 mois</option>
+                <option>6 à 12 mois</option>
+                <option>Plus de 12 mois</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step-panel">
+          <div class="step-label">Étape 3 · Description</div>
+          <div class="step-title">Décrivez votre projet</div>
+          <div class="field">
+            <label>Description</label>
+            <textarea name="description" placeholder="Décrivez votre projet, vos objectifs et les problématiques auxquelles vous souhaitez répondre."></textarea>
+          </div>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="step-panel">
+          <div class="success">
+            <div class="success-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </div>
+            <h3>Demande envoyée</h3>
+            <p style="max-width: 44ch; margin: 0 auto;">
+                Merci pour votre confiance. <br>
+                Nous étudions votre demande et revenons vers vous sous 48 heures ouvrées avec une première lecture.</p>
+          </div>
+        </div>
+
+        <div class="step-nav">
+          <span class="step-count">Étape 1 / 3</span>
+          <div class="step-btns">
+            <button type="button" class="btn btn-ghost btn-sm btn-prev"><span>Précédent</span></button>
+            <button type="button" class="btn btn-primary btn-sm btn-next"><span>Suivant</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button type="submit" class="btn btn-primary btn-sm btn-submit" style="display:none">
+                <span>Envoyer ma demande</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+        <div>
+            <h4>Freelance</h4>
+            </span> JL Environmental Consulting<span style="color:var(--water)"></span></a>
+            <p style="text-align: justify;"> <br> 
+                <i>Consultante freelance spécialisée dans l'analyse de données environnementales et le développement d'interfaces numériques </i>
+            </p>
+        </div>
+      
+        <div>
+            <h4>Navigation</h4>
+            <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#expertise">Expertise</a></li>
+            <li><a href="index.html#services">Prestations</a></li>
+            <li><a href="services.html">Prestations détaillées</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      
+        <div>
+            <h4>Contact</h4>
+            <a href="mailto:contact@verdant-conseil.com">laurent.jennifer44@gmail.com</a></li>
+            <p>Paris · Remote</p>
+        </div>
+      
+        <div>
+            <h4>Réseaux</h4>
+            <div class="socials">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jennifer-laurent-phd-844404286/"  aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v13H.22V8zm7.5 0h4.37v1.78h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v6.58h-4.56v-5.83c0-1.39-.03-3.18-1.94-3.18-1.94 0-2.24 1.51-2.24 3.08V21H7.72V8z"/></svg></a>
+                <!-- ResearchGate -->
+                <a href="https://www.researchgate.net/profile/Jennifer-Laurent" aria-label="ResearchGate" class="social-bubble" target="_blank" rel="noopener noreferrer"> RG </a>
+                <!-- ORCID -->
+                <a href="https://orcid.org/0000-0003-4007-7179" aria-label="ORCID" class="social-bubble" target="_blank" rel="noopener noreferrer"> iD </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> © <span class="year">2026</span> 
+          JL Environmental Consulting <br> 
+          Jennifer LAURENT - Tous droits réservés</p>
+    </div>
+  
+</div>
+</footer>
+
+</body>
+</html>

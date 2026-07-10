@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- CONFIGURATION -->
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" type="image/png" href="./images/logo2.png">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <!-- Java Script -->
+    <script src="./js/script.js" defer></script>
+    <!-- Title -->
+    <title>Prestations</title>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav">
+    <div class="logo-container">
+        <img src="./images/logo1.png" alt="Logo" class="logo">
+        <span><b>JL Environmental Consulting</b></span>
+    </div>
+    <nav>
+        <a href="index.html"><b>Accueil</b></a>
+        <a href="projects.html"><b>Projets</b></a>
+        <a href="about.html"><b>À propos</b></a>
+        <a href="contact.html"><b>Contact</b></a>
+    </nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero2 hero2-service">
+    <h1 style="font-size: 40px;">
+        Accompagner la recherche et la gestion à travers <br> l’analyse de données et le développement d’outils numériques
+    </h1>
+    <div class="hero2-credit">
+        Photo: Jennifer Laurent
+    </div>
+</section>
+
+
+<!-- PRESTATIONS DETAILLEES -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-head">
+        <div class="reveal">
+            <span class="eyebrow">PRESTATIONS DETAILLÉES</span>
+            <h2>Des prestations adaptées à vos projets</h2>
+        </div>
+        <p class="lead reveal" style="font-size: 18px;">
+            Accompagner les acteurs de la recherche, les bureaux d'études et les gestionnaires dans l'analyse, l'interprétation et la valorisation des données environnementales.
+            Chaque prestation est adaptée aux objectifs scientifiques ou opérationnels du projet. <br><br>
+        </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg></div>
+        <span class="num">/ Data</span>
+        <h3>Analyse de données environnementales</h3>
+        <p>Transformer des données complexes en résultats fiables et exploitables grâce à des méthodes statistiques adaptées aux problématiques environnementales.</p>
+        <ul>
+          <li>Nettoyage et structuration de bases de données</li>
+          <li>Analyses statistiques sous R et Python</li>
+          <li>Analyses multivariées</li>
+          <li>Analyses de séries temporelles</li>
+          <li>Modélisation des relations pression–impact</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20V10M11 20V6M16 20v-8M21 20V4"/></svg></div>
+        <span class="num">/ Data</span>
+        <h3>Visualisation de données complexes</h3>
+        <p>Concevoir des représentations claires, interactives et adaptées à différents publics afin de faciliter l'interprétation et la prise de décision.</p>
+        <ul>
+          <li>Graphiques simples ou exploratoires</li>
+          <li>Visualisations avancées (PCA, GAM, BRT, etc..)</li>
+          <li>Graphiques interactifs pour filtrer les données</li>
+          <li>Graphiques multi-échelles spatiales/ temporelles</li>
+          <li>Tableaux de bord et visualisation dynamique</li>
+        </ul>
+      </article>
+      
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8M12 18v2M7 10l3 3 7-6"/></svg></div>
+        <span class="num">/ Digital</span>
+        <h3>Développement d'outils numériques</h3>
+        <p>Développer des outils permettant d'explorer, d'analyser et de partager efficacement des données scientifiques.</p>
+        <ul>
+          <li>Interfaces intuitives pour utilisateurs non spécialistes</li>
+          <li>Plateformes et dashboard scientifiques</li>
+          <li>Applications web (Streamlit)</li>
+          <li>Connecteurs GitHub et Zenodo</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 21s6-6.2 6-11a6 6 0 1 0-12 0c0 4.8 6 11 6 11z"/><circle cx="12" cy="10" r="2"/></svg></div>
+        <span class="num">/ Spatial</span>
+        <h3>Cartographie & analyse spatiale</h3>
+        <p>Exploiter les données géographiques pour analyser les dynamiques environnementales pour les différents utilisateurs.</p>
+        <ul>
+          <li>Visualisation de données géographiques et cartes (Q-GIS)</li>
+          <li>Cartes interactives</li>
+          <li>Analyse multi-échelle des bassins versants</li>
+          <li>Intégration de données SIG et environnementales</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 19v-1.5a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4V19"/></svg></div>
+        <span class="num">/ Decision</span>
+        <h3>Interface science & gestion</h3>
+        <p>Faciliter le dialogue entre chercheurs, gestionnaires et parties prenantes pour l'aide à la décision.</p>
+        <ul>
+          <li>Communication avec les gestionnaires de l'eau</li>
+          <li>Animation d'ateliers avec les parties prenantes</li>
+          <li>Valorisation des résultats pour l'aide à la décision</li>
+          <li>Développement d'outils adaptés aux besoins des utilisateurs</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 11h5"/><path d="M10 15h5"/><path d="M10 19h3"/></svg></div>
+        <span class="num">/ Science</span>
+        <h3>Communication scientifique</h3>
+        <p>Valoriser les résultats scientifiques auprès de différentes audiences grâce à des supports de communication clairs, rigoureux et accessibles.</p>
+        <ul>
+          <li>Rédaction d'articles scientifiques</li>
+          <li>Préparation de posters et conférences</li>
+          <li>Présentation des résultats de recherche</li>
+          <li>Multiples supports de communication scientifique</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+        <div>
+            <h4>Freelance</h4>
+            </span> JL Environmental Consulting<span style="color:var(--water)"></span></a>
+            <p style="text-align: justify;"> <br> 
+                <i>Consultante freelance spécialisée dans l'analyse de données environnementales et le développement d'interfaces numériques </i>
+            </p>
+        </div>
+      
+        <div>
+            <h4>Navigation</h4>
+            <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#expertise">Expertise</a></li>
+            <li><a href="index.html#services">Prestations</a></li>
+            <li><a href="services.html">Prestations détaillées</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      
+        <div>
+            <h4>Contact</h4>
+            <a href="mailto:contact@verdant-conseil.com">laurent.jennifer44@gmail.com</a></li>
+            <p>Paris · Remote</p>
+        </div>
+      
+        <div>
+            <h4>Réseaux</h4>
+            <div class="socials">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jennifer-laurent-phd-844404286/"  aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v13H.22V8zm7.5 0h4.37v1.78h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v6.58h-4.56v-5.83c0-1.39-.03-3.18-1.94-3.18-1.94 0-2.24 1.51-2.24 3.08V21H7.72V8z"/></svg></a>
+                <!-- ResearchGate -->
+                <a href="https://www.researchgate.net/profile/Jennifer-Laurent" aria-label="ResearchGate" class="social-bubble" target="_blank" rel="noopener noreferrer"> RG </a>
+                <!-- ORCID -->
+                <a href="https://orcid.org/0000-0003-4007-7179" aria-label="ORCID" class="social-bubble" target="_blank" rel="noopener noreferrer"> iD </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> © <span class="year">2026</span> 
+          JL Environmental Consulting <br> 
+          Jennifer LAURENT - Tous droits réservés</p>
+    </div>
+  
+</div>
+</footer>
+
+</body>
+</html>

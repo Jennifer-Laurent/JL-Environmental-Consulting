@@ -1,0 +1,290 @@
+/* =========================================================
+   RESPONSIVE - JL ENVIRONMENTAL CONSULTING 
+========================================================= */
+
+/* ===================== SMALL DESKTOP ===================== */
+
+@media (max-width: 1024px) {
+
+    .presta-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .expertise-grid,
+    .transferability-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+
+/* ===================== TABLETTE (900px - 600px) ===================== */
+
+@media (max-width: 900px) {
+
+    body {
+        padding-top: 0 !important;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero1,
+    .hero2 {
+        min-height: auto;
+        padding: 70px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-feature {
+        padding: 12px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .hero-feature:last-child {
+        border-bottom: none;
+    }
+
+    .presta-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-media {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .timeline {
+        position: relative;
+        top: 0;
+        padding-left: 30px;
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        will-change: auto !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+    section {
+        padding: 50px 20px !important;
+        overflow-x: hidden;
+    }
+}
+
+
+/* ===================== PHONE (MAX 600px) ===================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    html {
+        overflow-x: hidden !important;
+    }
+
+    section {
+        padding: 40px 14px 60px !important;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 12px;
+        text-align: center;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9999 !important;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .hero1,
+    .hero2 {
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        min-height: auto !important;
+    }
+
+    .hero1 h1,
+    .hero2 h1 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 15px !important;
+        margin-top: 100px !important;
+        color: white !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: block !important;
+        z-index: 2 !important;
+        position: relative !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important;
+        font-weight: bold !important;
+        animation: none !important;
+    }
+
+    .hero1 p,
+    .hero2 p {
+        font-size: 0.95rem !important;
+        color: rgba(255,255,255,0.95) !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6) !important;
+    }
+
+    .hero1 > *,
+    .hero2 > * {
+        position: relative !important;
+        z-index: 1 !important;
+    }
+
+    .hero-divider {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hero-features {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+    .hero-feature {
+        width: 100% !important;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-right: none !important;
+        padding: 12px 10px !important;
+    }
+
+    .hero-feature:last-child {
+        border-bottom: none !important;
+    }
+
+    .hero-button {
+        display: block !important;
+        visibility: visible !important;
+        margin-top: 20px !important;
+    }
+
+    .presta-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .service-card {
+        min-height: auto !important;
+    }
+
+    .expertise-grid,
+    .transferability-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .project-media {
+        grid-template-columns: 1fr !important;
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        will-change: auto !important;
+        display: block !important;
+        visibility: visible !important;
+        animation: none !important;
+    }
+}
+
+/* ===================== SMALL SCREEN (MAX 400px) ===================== */
+
+@media (max-width: 400px) {
+
+    .hero1,
+    .hero2 {
+        padding-top: 90px !important;
+        padding-bottom: 30px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .hero1 h1,
+    .hero2 h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .hero-feature img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    section {
+        padding: 30px 10px 45px !important;
+    }
+}
