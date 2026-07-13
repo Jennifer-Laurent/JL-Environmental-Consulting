@@ -352,12 +352,6 @@
         font-size:1.5rem;
     }
 
-    .footer-nav{
-        display:flex;
-        flex-direction:column;
-        gap:12px;
-    }
-
     .reveal {
         opacity: 1 !important;
         transform: none !important;
