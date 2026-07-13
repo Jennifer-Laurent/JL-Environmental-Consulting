@@ -504,7 +504,6 @@ header.scrolled a::after {
         translateY(-14px)
         rotateX(6deg)
         rotateY(-4deg);
-    border-color: var(--water-deep);
     box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
 

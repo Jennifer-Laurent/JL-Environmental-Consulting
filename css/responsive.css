@@ -79,6 +79,16 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .service-container{
+        display:grid;
+        grid-template-columns:1fr !important;
+        gap:20px;
+    }
+
+    .service-card{
+        width:100%;
+    }
+
     .project-card {
         flex-direction: column;
     }
