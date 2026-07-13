@@ -352,6 +352,18 @@
         font-size:1.5rem;
     }
 
+    .footer-grid{
+        grid-template-columns:1fr !important;
+        gap:30px;
+        text-align:center;
+    }
+
+    .footer-nav{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
     .reveal {
         opacity: 1 !important;
         transform: none !important;
