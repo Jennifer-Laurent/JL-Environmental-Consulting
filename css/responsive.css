@@ -267,16 +267,15 @@
         grid-template-columns: 1fr !important;
     }
 
-    .service-container {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
+    .service-grid{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:20px !important;
     }
-    
-    .service-card{
-        min-height: auto !important;
-        padding:24px 18px;
-        min-height:auto;
 
+    .service-card{
+        width:100%;
+        padding:24px 20px;
     }
 
     .service-card h3{
