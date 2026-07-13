@@ -358,10 +358,18 @@
         text-align:center;
     }
 
+    .footer-grid p {
+        text-align:center;
+    }
+
     .footer-nav{
         display:flex;
         flex-direction:column;
         gap:12px;
+    }
+
+    .footer-nav p {
+        text-align:center;
     }
 
     .reveal {
